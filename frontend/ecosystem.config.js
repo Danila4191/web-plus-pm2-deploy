@@ -13,7 +13,7 @@ const {
         user: DEPLOY_USER,
         host: DEPLOY_HOST,
         ref: DEPLOY_REF,
-        repo: 'https://github.com/Danila4191/web-plus-pm2-deploy',
+        repo: 'git@github.com:Danila4191/web-plus-pm2-deploy.git',
         path: DEPLOY_PATH,
         'pre-deploy': `scp ./*.env ${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_PATH}`,
         'post-deploy': 'cd frontend && npm i && npm run build',
