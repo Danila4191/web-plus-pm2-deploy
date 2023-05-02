@@ -15,7 +15,7 @@ module.exports = {
       ref: DEPLOY_REF,
       repo: 'git@github.com:Danila4191/web-plus-pm2-deploy.git',
       path: DEPLOY_PATH,
-      'post-deploy': 'apt-get install -y npm && cd backend && npm i && npm run build && pm2 reload ecosystem.config.js && pm2 save',
+      'post-deploy': ' cd backend && npm i && npm run build && pm2 reload ecosystem.config.js && pm2 save',
     },
   },
 }
