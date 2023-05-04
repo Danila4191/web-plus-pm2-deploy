@@ -15,8 +15,8 @@ const {
         ref: DEPLOY_REF,
         repo: 'git@github.com:Danila4191/web-plus-pm2-deploy.git',
         path: DEPLOY_PATH,
-        'pre-deploy': `scp ./.env.deploy ${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_PATH}`,
-        'post-deploy': 'cd frontend && npm i && npm run build',
+        'pre-deploy-local ': `scp ./.env.deploy ${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_PATH}`,
+        'post-deploy': 'cd ~/web-plus-pm2-deploy/frontend && npm i && npm run build',
       },
     },
   }
