@@ -139,6 +139,6 @@ class Api {
   }
   }
   // Замените на адрес вашего бэкенда
-  const api = new Api('https://api.superSite.nomoredomains.monster');
+  const api = new Api('https://api.supersite.nomoredomains.monster');
 
   export default api;
